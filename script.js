@@ -38,3 +38,8 @@ class PerishableProductProperties extends ProductProperties {
     }
 }
 
+class Store {
+    constructor() {
+        this.inventory = []; // Array to store Product and PerishableProduct objects
+    }
+}
