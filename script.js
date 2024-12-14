@@ -94,3 +94,11 @@ store.inventory.forEach(product => console.log(product.toString()));
 let totalValueAfterDiscount = store.getInventoryValue();
 console.log(`\n💸 Total inventory value after discount: $${totalValueAfterDiscount.toFixed(2)}`);
 
+// Find and print a specific product by name
+const productToFind = 'Milk';
+const foundProduct = store.findProductByName(productToFind);
+if (foundProduct) {
+    console.log(`\n🔍 Found product: ${foundProduct.toString()}`);
+} else {
+    console.log(`\n🔍 Product "${productToFind}" not found in inventory.`);
+}
