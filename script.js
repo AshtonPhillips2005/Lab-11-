@@ -42,4 +42,9 @@ class Store {
     constructor() {
         this.inventory = []; // Array to store Product and PerishableProduct objects
     }
+
+    // Method to add a product to the store's inventory
+    addProduct(product) {
+        this.inventory.push(product);
+    }
 }
