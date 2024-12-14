@@ -65,4 +65,4 @@ const apple = new ProductProperties('Apple', 1.20, 50);
 const orange = new ProductProperties('Orange', 0.80, 30);
 const milk = new PerishableProductProperties('Milk', 2.50, 20, '2024-12-31');
 const cheese = new PerishableProductProperties('Cheese', 5.00, 10, '2024-11-30');
-const bread = new ProductProperties('Bread', 2.00, 15);
+const bread = new ProductProperties('Bread', 1.75, 15);
