@@ -66,3 +66,11 @@ const orange = new ProductProperties('Orange', 0.80, 30);
 const milk = new PerishableProductProperties('Milk', 2.50, 20, '2024-12-31');
 const cheese = new PerishableProductProperties('Cheese', 5.00, 10, '2024-11-30');
 const bread = new ProductProperties('Bread', 1.75, 15);
+
+// Create a store and add the products
+const store = new Store();
+store.addProduct(apple);
+store.addProduct(orange);
+store.addProduct(milk);
+store.addProduct(cheese);
+store.addProduct(bread);
