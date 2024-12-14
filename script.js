@@ -82,3 +82,6 @@ store.inventory.forEach(product => console.log(product.toString()));
 // Print total inventory value before discount
 let totalValueBeforeDiscount = store.getInventoryValue();
 console.log(`\n💸 Total inventory value before discount: $${totalValueBeforeDiscount.toFixed(2)}`);
+
+// Apply a 15% discount to all products
+ProductProperties.applyDiscount(store.inventory, 0.15);
