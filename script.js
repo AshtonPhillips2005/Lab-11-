@@ -52,4 +52,9 @@ class Store {
     getInventoryValue() {
         return this.inventory.reduce((total, product) => total + product.getTotalValue(), 0);
     }
+
+    // Method to find a product by name
+    findProductByName(name) {
+        return this.inventory.find(product => product.name === name) || null;
+    }
 }
