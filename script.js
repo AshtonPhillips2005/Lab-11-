@@ -58,3 +58,11 @@ class Store {
         return this.inventory.find(product => product.name === name) || null;
     }
 }
+
+
+// Create 5 products (including 2 PerishableProduct objects)
+const apple = new ProductProperties('Apple', 1.20, 50);
+const orange = new ProductProperties('Orange', 0.80, 30);
+const milk = new PerishableProductProperties('Milk', 2.50, 20, '2024-12-31');
+const cheese = new PerishableProductProperties('Cheese', 5.00, 10, '2024-11-30');
+const bread = new ProductProperties('Bread', 2.00, 15);
