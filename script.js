@@ -74,3 +74,7 @@ store.addProduct(orange);
 store.addProduct(milk);
 store.addProduct(cheese);
 store.addProduct(bread);
+
+// Print all products in the inventory
+console.log("🛒 Store Inventory:");
+store.inventory.forEach(product => console.log(product.toString()));
