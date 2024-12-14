@@ -14,4 +14,14 @@ class ProductProperties {
     toString() {
         return `Product: ${this.name}, Price: $${this.price.toFixed(2)}, Quantity: ${this.quantity}`;
     }
+
+    // Static method to apply a discount to an array of products
+    static applyDiscount(products, discount) {
+        if (discount < 0 || discount > 1) {
+            throw new Error("Discount must be a value between 0 and 1");
+        }
+        products.forEach(product => {
+            product.price -= product.price * discount;
+        });
+    }
 }
