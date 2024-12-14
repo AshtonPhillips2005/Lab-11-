@@ -78,3 +78,7 @@ store.addProduct(bread);
 // Print all products in the inventory
 console.log("🛒 Store Inventory:");
 store.inventory.forEach(product => console.log(product.toString()));
+
+// Print total inventory value before discount
+let totalValueBeforeDiscount = store.getInventoryValue();
+console.log(`\n💸 Total inventory value before discount: $${totalValueBeforeDiscount.toFixed(2)}`);
