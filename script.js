@@ -25,3 +25,10 @@ class ProductProperties {
         });
     }
 }
+
+class PerishableProductProperties extends ProductProperties {
+    constructor(name, price, quantity, expirationDate) {
+        super(name, price, quantity); // Call parent constructor
+        this.expirationDate = expirationDate; // New property specific to PerishableProduct
+    }
+}
