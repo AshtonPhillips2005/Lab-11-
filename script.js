@@ -89,3 +89,8 @@ ProductProperties.applyDiscount(store.inventory, 0.15);
 // Print inventory after the discount
 console.log("\n🛒 Store Inventory (after 15% discount):");
 store.inventory.forEach(product => console.log(product.toString()));
+
+// Print total inventory value after discount
+let totalValueAfterDiscount = store.getInventoryValue();
+console.log(`\n💸 Total inventory value after discount: $${totalValueAfterDiscount.toFixed(2)}`);
+
